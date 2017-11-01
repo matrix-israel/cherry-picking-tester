@@ -179,6 +179,10 @@ $ul = makeList($tree);
             color: blue;
         }
 
+        .link a{
+            text-decoration: none;
+        }
+
         #go-to-main, #close-tree{
             position: fixed;
             right: 10px;
@@ -247,7 +251,7 @@ $ul = makeList($tree);
 <div style="display: none">
     <?php echo $ul; ?>
 </div>
-<h3>Cherry pick of commits <span class="link"  title="<?php echo $commit_message ?>"><a target="_blank" href="<?php echo $origin_location . '/' . $commit_picked?>"><?php echo $commit_picked ?></a></span></h3>
+<h3>Cherry pick of commits <span class="link"  title="<?php echo $commit_message ?>"><a target="_blank" href="<?php echo $origin_location . '/commit/' . $commit_picked?>"><?php echo $commit_picked ?></a></span></h3>
 
 <div class="tab">
     <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'gauge-charts')">General evaluation</button>
@@ -415,14 +419,14 @@ $ul = makeList($tree);
                     animationEnabled: true,
                     title:{
                         text: "Information about a required commit",
-                        fontSize:40
+                        fontSize:32
                     },
                     subtitles: [{
                         text: "Important info about files are changed in the required commit"
                     }],
                     axisX: {
                         title: "Files",
-                        labelFontSize: 25
+                        labelFontSize: 20
                     },
                     axisY: {
                         title: "Count lines",
