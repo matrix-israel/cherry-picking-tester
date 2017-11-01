@@ -9,5 +9,12 @@ This Utility possible for you to evaluate the complexity of picking of specific 
  Download cherry_picking_tester.php to root of your project (location of .git folder) \
  Browse to cherry_picking_tester.php file.\
  Fill input with the commit you want pick and click test.\
- You will find a lot of important data that can help you to get a decide. 
+ You will find a lot of important data that can help you to get a decide.  
+ 
+ **Gauge diffculty**
+ ![](http://160.153.226.63/cp_images/pc1.png) 
+ **Research a dependencies**
+ ![](http://160.153.226.63/cp_images/pc2.png) 
+ **Statics about required changes**
+ ![](http://160.153.226.63/cp_images/pc3.png) 
  
